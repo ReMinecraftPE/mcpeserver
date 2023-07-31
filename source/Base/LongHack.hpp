@@ -1,9 +1,8 @@
 #pragma once
-#include <climits>
 
 // Have to do this because GCC on 64-bit targets makes longs 64-bit.
-#if LONG_MAX != INT32_MAX
-#define TLong int
-#else
+#ifdef ORIGINAL_CODE
 #define TLong long
+#else
+#define TLong int
 #endif
