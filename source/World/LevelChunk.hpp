@@ -8,7 +8,9 @@
 
 #pragma once
 
+#include <cstring>
 #include <vector>
+#include <algorithm>
 #include "AABB.hpp"
 #include "Utils.hpp"
 #include "LightLayer.hpp"

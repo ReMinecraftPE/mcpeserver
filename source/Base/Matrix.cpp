@@ -29,11 +29,6 @@ Matrix::Matrix(float a, float b, float q, float d, float e, float f, float g, fl
 	c[0] = a, c[1] = b, c[2] = q, c[3] = d, c[4] = e, c[5] = f, c[6] = g, c[7] = h, c[8] = i, c[9] = j, c[10] = k, c[11] = l, c[12] = m, c[13] = n, c[14] = o, c[15] = p;
 }
 
-void Matrix::fetchGL(GLenum pname)
-{
-	glGetFloatv(pname, c);
-}
-
 Matrix operator*(const Matrix& a, const Matrix& b)
 {
 	Matrix result;

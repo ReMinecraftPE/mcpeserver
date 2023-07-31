@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include <cstring>
+#include <algorithm>
 #include <string>
 #include <vector>
 

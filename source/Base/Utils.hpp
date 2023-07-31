@@ -11,6 +11,7 @@
 #include <ctime>
 #include <cstdio> // have to include this to avoid it being included again later from being a problem
 #include <cstdint>
+#include <cstdarg>
 #include <cassert>
 
 #ifdef _WIN32
@@ -19,6 +20,10 @@
 #include <WinSock2.h>
 #include <Windows.h>
 #include <WS2tcpip.h>
+
+#else
+
+#include <unistd.h>
 
 #endif
 
