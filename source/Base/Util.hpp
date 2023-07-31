@@ -12,6 +12,7 @@
 #include <algorithm>
 #include <string>
 #include <vector>
+#include "LongHack.hpp"
 
 class Util
 {
@@ -58,9 +59,9 @@ public:
 		}
 	}
 
-	static long hashCode(const std::string& str)
+	static Long hashCode(const std::string& str)
 	{
-		long result = 0;
+		Long result = 0;
 
 		for (auto chr : str)
 		{

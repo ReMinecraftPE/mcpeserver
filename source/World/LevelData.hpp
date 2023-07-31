@@ -32,11 +32,11 @@ struct PlayerData
 struct LevelData
 {
 	LevelData();
-	LevelData(long seed, const std::string&, int);
+	LevelData(Long seed, const std::string&, int);
 
-	long m_seed = 0;
+	Long m_seed = 0;
 	Pos m_spawnPos;
-	long field_10 = 0;
+	Long field_10 = 0;
 	int field_14 = 0;
 	int field_18 = 0;
 	int field_1C = 0;

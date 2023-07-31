@@ -13,10 +13,11 @@
 #include <cstdint>
 #include <cstdarg>
 #include <cassert>
+#include <climits>
 
 #ifdef _WIN32
 
- // @HACK: Include WinSock2.h also
+// @HACK: Include WinSock2.h also
 #include <WinSock2.h>
 #include <Windows.h>
 #include <WS2tcpip.h>

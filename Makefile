@@ -35,7 +35,7 @@ INCLUDES = \
 -Isource/World/Particle      \
 -Isource/World/Storage
 
-CXXFLAGS = $(INCLUDES)
+CXXFLAGS = $(INCLUDES) -Wall
 
 CPP_FILES = $(shell find $(SRC_DIR) $(THIRDPARTY_DIR) -type f -name '*.cpp')
 OBJ_FILES = $(patsubst %, $(BUILD_DIR)/%, $(CPP_FILES:.cpp=.o))

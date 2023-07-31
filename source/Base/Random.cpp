@@ -16,12 +16,12 @@
 #define UPPER_MASK 0x80000000UL /* most significant w-r bits */
 #define LOWER_MASK 0x7fffffffUL /* least significant r bits */
 
-Random::Random(long seed)
+Random::Random(Long seed)
 {
 	setSeed(seed);
 }
 
-void Random::setSeed(long seed)
+void Random::setSeed(Long seed)
 {
 	rseed = seed;
 	mti = N + 1;
@@ -29,7 +29,7 @@ void Random::setSeed(long seed)
 }
 
 /* initializes mt[N] with a seed */
-void Random::init_genrand(unsigned long s)
+void Random::init_genrand(unsigned Long s)
 {
 	mt[0] = s & 0xffffffffUL;
 	for (mti = 1; mti < N; mti++) {
@@ -52,8 +52,8 @@ int Random::nextInt(int max)
 // Returns a number from 0 to n (excluding n)
 unsigned int Random::genrand_int32()
 {
-	unsigned long y;
-	static unsigned long mag01[2]={0x0UL, MATRIX_A};
+	unsigned Long y;
+	static unsigned Long mag01[2]={0x0UL, MATRIX_A};
 	/* mag01[x] = x * MATRIX_A  for x=0,1 */
 
 	if (mti >= N) { /* generate N words at one time */
@@ -97,9 +97,9 @@ double Random::genrand_real2()
 	return double(genrand_int32()) * (1.0 / 4294967296.0);
 }
 
-long Random::nextLong()
+Long Random::nextLong()
 {
-	return long(genrand_int32() >> 1);
+	return Long(genrand_int32() >> 1);
 }
 
 int Random::nextInt()

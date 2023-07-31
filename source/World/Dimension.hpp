@@ -27,7 +27,7 @@ public:
 	virtual bool isValidSpawn(int x, int z);
 
 	float* getSunriseColor(float, float);
-	float getTimeOfDay(long, float);
+	float getTimeOfDay(Long, float);
 	void init(Level* pLevel);
 	void updateLightRamp();
 

@@ -13,7 +13,7 @@
 int main()
 {
 	LogMsg("Minecraft PE Server - Copyright (C) 2023 iProgramInCpp");
-
+	
 	LogMsg("Initializing databases...");
 	Mth::initMth();
 	Material::initMaterials();
