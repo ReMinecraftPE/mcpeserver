@@ -39,17 +39,17 @@ int getTimeMs();
 class Random
 {
 	unsigned int rseed;
-	unsigned Long mt[CMATH_N];  // the array for the state vector
+	unsigned TLong mt[CMATH_N];  // the array for the state vector
 	int mti;                    // mti==N+1 means mt[N] is not initialized
 
 public:
-	Random(Long seed = getTimeMs());
-	void setSeed(Long seed);
-	void init_genrand(unsigned Long);
+	Random(TLong seed = getTimeMs());
+	void setSeed(TLong seed);
+	void init_genrand(unsigned TLong);
 	int nextInt(int max);
 	unsigned genrand_int32();
 	float nextFloat();
 	double genrand_real2();
-	Long nextLong();
+	TLong nextTLong();
 	int nextInt();
 };

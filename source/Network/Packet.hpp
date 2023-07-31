@@ -79,7 +79,7 @@ public:
 	void write(RakNet::BitStream*);
 	void read(RakNet::BitStream*);
 public:
-	Long field_4;
+	TLong field_4;
 	int field_8;
 	int field_C;
 	float field_10;

@@ -59,9 +59,9 @@ public:
 		}
 	}
 
-	static Long hashCode(const std::string& str)
+	static TLong hashCode(const std::string& str)
 	{
-		Long result = 0;
+		TLong result = 0;
 
 		for (auto chr : str)
 		{

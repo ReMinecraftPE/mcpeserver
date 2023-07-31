@@ -60,7 +60,7 @@ public:
 	virtual void setBlocks(uint8_t* pData, int y);
 	virtual int  getBlocksAndData(uint8_t* pData, int, int, int, int, int, int, int);
 	virtual int  setBlocksAndData(uint8_t* pData, int, int, int, int, int, int, int);
-	virtual Random getRandom(Long l);
+	virtual Random getRandom(TLong l);
 	virtual void recalcHeight(int, int, int);
 	virtual bool isEmpty();
 	//...

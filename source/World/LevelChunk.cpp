@@ -901,7 +901,7 @@ int LevelChunk::getBlocksAndData(uint8_t* pData, int a3, int a4, int a5, int a6,
 	return a9;
 }
 
-Random LevelChunk::getRandom(Long l)
+Random LevelChunk::getRandom(TLong l)
 {
 	Random random;
 

@@ -17,13 +17,13 @@ struct TickNextTickData
 	int hashCode() const;
 	bool operator<(const TickNextTickData& other) const;
 	bool operator==(const TickNextTickData& other) const;
-	void setDelay(Long);
+	void setDelay(TLong);
 
 	int m_ID;
 	int field_4;
 	int field_8;
 	int field_C;
 	int field_10;
-	Long m_delay;
+	TLong m_delay;
 };
 

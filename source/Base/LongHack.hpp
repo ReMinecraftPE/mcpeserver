@@ -3,7 +3,7 @@
 
 // Have to do this because GCC on 64-bit targets makes longs 64-bit.
 #if LONG_MAX != INT32_MAX
-#define Long int
+#define TLong int
 #else
-#define Long long
+#define TLong long
 #endif
