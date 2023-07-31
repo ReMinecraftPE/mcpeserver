@@ -245,7 +245,6 @@
     <ClInclude Include="..\thirdparty\raknet\_FindFirst.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\platforms\windows\main.cpp" />
     <ClCompile Include="..\source\Base\AABB.cpp" />
     <ClCompile Include="..\source\Base\CThread.cpp" />
     <ClCompile Include="..\source\Base\HitResult.cpp" />
@@ -259,6 +258,7 @@
     <ClCompile Include="..\source\Base\Utils.cpp" />
     <ClCompile Include="..\source\Base\Vec3.cpp" />
     <ClCompile Include="..\source\Inventory.cpp" />
+    <ClCompile Include="..\source\main.cpp" />
     <ClCompile Include="..\source\Network\MinecraftPackets.cpp" />
     <ClCompile Include="..\source\Network\NetEventCallback.cpp" />
     <ClCompile Include="..\source\Network\Packets\AddPlayerPacket.cpp" />
@@ -481,7 +481,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{ad85f5f3-6ad0-4c11-bb1d-33adb8eeb0b9}</ProjectGuid>
-    <RootNamespace>minecraftcpp</RootNamespace>
+    <RootNamespace>mcpeserver</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>mcpeserver</ProjectName>
   </PropertyGroup>

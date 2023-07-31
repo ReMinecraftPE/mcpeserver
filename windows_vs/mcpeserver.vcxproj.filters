@@ -747,14 +747,14 @@
     <ClCompile Include="..\source\World\TickNextTickData.cpp">
       <Filter>Source Files\World</Filter>
     </ClCompile>
-    <ClCompile Include="..\platforms\windows\main.cpp">
-      <Filter>Source Files\App</Filter>
-    </ClCompile>
     <ClCompile Include="..\source\Server.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\source\World\Region.cpp">
       <Filter>Source Files\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\main.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
