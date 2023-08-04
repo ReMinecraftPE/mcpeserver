@@ -756,6 +756,15 @@
     <ClCompile Include="..\source\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\World\Generator\ReedsFeature.cpp">
+      <Filter>Source Files\World\Generator\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\World\Generator\LargeCaveFeature.cpp">
+      <Filter>Source Files\World\Generator\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="..\source\World\Generator\LargeFeature.cpp">
+      <Filter>Source Files\World\Generator\Features</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\Options.hpp">
@@ -1405,6 +1414,12 @@
     </ClInclude>
     <ClInclude Include="..\source\World\Region.hpp">
       <Filter>Header Files\World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\World\Generator\LargeFeature.hpp">
+      <Filter>Header Files\World\Generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\World\Generator\LargeCaveFeature.hpp">
+      <Filter>Header Files\World\Generator</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

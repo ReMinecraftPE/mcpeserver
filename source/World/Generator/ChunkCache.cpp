@@ -179,6 +179,31 @@ void ChunkCache::saveAll()
 	m_pChunkStorage->saveAll(m_pLevel, chunksToSave);
 }
 
+#ifdef ENH_IMPROVED_SAVING
+
+void ChunkCache::saveUnsaved()
+{
+	if (!m_pChunkStorage) return;
+
+	std::vector<LevelChunk*> chunksToSave;
+
+	for (int i = 0; i < C_MAX_CHUNKS_Z; i++)
+	{
+		for (int j = 0; j < C_MAX_CHUNKS_X; j++)
+		{
+			LevelChunk* pChunk = m_pLevel->getChunk(j, i);
+			if (!pChunk->m_bUnsaved)
+				continue;
+
+			chunksToSave.push_back(pChunk);
+		}
+	}
+
+	m_pChunkStorage->saveAll(m_pLevel, chunksToSave);
+}
+
+#endif
+
 bool ChunkCache::shouldSave()
 {
 	return true;
